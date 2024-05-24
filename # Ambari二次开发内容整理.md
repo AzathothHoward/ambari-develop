@@ -869,7 +869,7 @@ discovery.zen.ping_timeout: {{discovery_zen_ping_timeout}}s
     </property> 
 
    ```
-   ![alt text](image.png)
+   ![alt text](images/image.png)
 
 5. 开关量
    
@@ -883,7 +883,7 @@ discovery.zen.ping_timeout: {{discovery_zen_ping_timeout}}s
         <description>这是属性描述</description>
     </property>
    ```
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 
 6. 去除自定义配置
@@ -1006,7 +1006,7 @@ discovery.zen.ping_timeout: {{discovery_zen_ping_timeout}}s
 ### 获取页面的配置信息
 使用Script.get_config()获取configuration目录下的里面的xml文件名里面的一个property的name就可以获取到value值了
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### 获取ambari集群配置信息
 通过ambariLevelParams的java_home获取当前版本
@@ -1024,9 +1024,9 @@ discovery.zen.ping_timeout: {{discovery_zen_ping_timeout}}s
 from resource_management.libraries.functions.default import default
 ```
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 ### 通过python执行shell语句
 Execute
 
@@ -1034,22 +1034,22 @@ Execute
 from resource_management.core.resources.system import Execute
 ```
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 Execute方法还可以指定执行用户以及失败后是否忽略
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 ### 通过python创建文件夹和创建文件
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 
 
 
 ### 通过python删除文件夹和创建文件
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
 
 
 ## ambari自定义服务生命周期管理
@@ -1060,7 +1060,7 @@ Execute方法还可以指定执行用户以及失败后是否忽略
 
 在metainfo.xml中的component标签下面有commandScript，指定了组件运行时候使用的python文件
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 
 
 - 安装install():
@@ -1081,10 +1081,10 @@ Execute方法还可以指定执行用户以及失败后是否忽略
   使用ambari的resource_management中的check_process_status判断服务状态
   也就是监测一个pid文件里面的进程号是不是当前正在运行的进程号来监测启动状态
 
-  ![alt text](image-10.png)
+  ![alt text](images/image-10.png)
 
   status_params.py文件中的内容是
-  ![alt text](image-11.png)
+  ![alt text](images/image-11.png)
 
 - 重启restart():
   
